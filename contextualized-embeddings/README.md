@@ -1,1 +1,1 @@
-# Non-contexual embeddings for nested NER
+# Contextual word embeddings for nested NER
