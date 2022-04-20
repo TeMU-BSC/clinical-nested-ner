@@ -92,7 +92,7 @@ class DataTrainingArguments:
     dataset_name: Optional[str] = field(
         default=None, metadata={"help": "The name of the dataset to use (via the datasets library)."}
     )
-    conll_loading_script: Optional[str] = field(default=None,
+    loading_script: Optional[str] = field(default=None,
         metadata={"help": "Path to the datasets loading script to load local data in CONLL format"})
     dataset_config_name: Optional[str] = field(
         default=None, metadata={"help": "The configuration name of the dataset to use (via the datasets library)."}
@@ -231,8 +231,8 @@ def main():
     if data_args.dataset_name is not None:
         # Downloading and loading a dataset from the hub.
         datasets = load_dataset(data_args.dataset_name)
-    elif data_args.conll_loading_script:
-        datasets = load_dataset(data_args.conll_loading_script, cache_dir=model_args.cache_dir)
+    elif data_args.loading_script:
+        datasets = load_dataset(data_args.loading_script, cache_dir=model_args.cache_dir)
     
     # See more about loading any type of standard or custom dataset (from files, python dict, pandas DataFrame, etc) at
     # https://huggingface.co/docs/datasets/loading_datasets.html.
