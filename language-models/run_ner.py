@@ -228,11 +228,7 @@ def main():
     #
     # In distributed training, the load_dataset function guarantee that only one local process can concurrently
     # download the dataset.
-    if data_args.dataset_name is not None:
-        # Downloading and loading a dataset from the hub.
-        datasets = load_dataset(data_args.dataset_name)
-    elif data_args.loading_script:
-        datasets = load_dataset(data_args.loading_script, cache_dir=model_args.cache_dir)
+    datasets = load_dataset(data_args.loading_script, data_args.dataset_name, cache_dir=model_args.cache_dir)
     
     # See more about loading any type of standard or custom dataset (from files, python dict, pandas DataFrame, etc) at
     # https://huggingface.co/docs/datasets/loading_datasets.html.
