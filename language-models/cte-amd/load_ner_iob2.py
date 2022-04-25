@@ -9,7 +9,7 @@ CITATION = ""
 DESCRIPTION = ""
 SPLITS = ["train", "dev", "test"]
 TYPES = ["wl", "pharmaconer", "clinical_trials"]
-DATASETS_DIR = "/home/ccasimiro/ccasimiro/clinical-nested-ner/datasets"
+DATASETS_DIR = "/home/bsc88/bsc88779/bsc_projects/temutauro/ccasimiro/clinical-nested-ner/datasets"
 DATASETS = {type: {f"{split}": os.path.join(DATASETS_DIR, f"formatted_data/{type}_joint_labeling/{split}.iob2") 
                   for split in SPLITS}
                   for type in TYPES}
