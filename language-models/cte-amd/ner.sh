@@ -22,38 +22,43 @@ export LD_LIBRARY_PATH=/gpfs/projects/bsc88/projects/bne/eval_amd/scripts_to_run
 seed=$1
 model_name=$2
 dataset_name=$3
-gradient_accumulation=$4
-learning_rate=$5
+learning_rate=$4
 
-epochs=30
+gradient_accumulation=2
+epochs=20
 batch_size=8
 
 # model_name=/gpfs/projects/bsc88/projects/bio_eval/power9/models/biomedical-clinical-swm-vocab-50k
 loading_script="$SCRIPT_DIR/load_ner_iob2.py"
 # dataset_name="wl"
 
-dt=$(date +%m-%d-%Y-%T)
-run_dir="$SCRIPT_DIR/runs/$(basename $model_name)/$dataset_name/$seed/$dt"
+# dt=$(date +%m-%d-%Y-%T)
+run_dir="$SCRIPT_DIR/runs/$(basename $model_name)/$dataset_name/seed-$seed/lr-$learning_rate"
+if [[ ! -d "$run_dir" ]] && [[ ! -f "$run_dir/predict_results.json" ]] ; then
 mkdir -p $run_dir
 
-python $SCRIPT_DIR/run_ner.py \
-  --model_name_or_path $model_name \
-  --loading_script $loading_script \
-  --dataset_name $dataset_name \
-  --do_train \
-  --do_eval \
-  --do_predict \
-  --per_device_train_batch_size $batch_size \
-  --gradient_accumulation_steps $gradient_accumulation \
-  --learning_rate $learning_rate \
-  --num_train_epochs $epochs \
-  --load_best_model_at_end \
-  --metric_for_best_model f1 \
-  --evaluation_strategy epoch \
-  --save_strategy epoch \
-  --overwrite_output_dir \
-  --seed $seed \
-  --logging_dir $run_dir/tb \
-  --output_dir $run_dir 2>&1 | tee $run_dir/train.log
+  python $SCRIPT_DIR/run_ner.py \
+    --model_name_or_path $model_name \
+    --loading_script $loading_script \
+    --dataset_name $dataset_name \
+    --do_train \
+    --do_eval \
+    --do_predict \
+    --per_device_train_batch_size $batch_size \
+    --gradient_accumulation_steps $gradient_accumulation \
+    --learning_rate $learning_rate \
+    --num_train_epochs $epochs \
+    --load_best_model_at_end \
+    --metric_for_best_model f1 \
+    --evaluation_strategy epoch \
+    --save_strategy epoch \
+    --overwrite_output_dir \
+    --seed $seed \
+    --logging_dir $run_dir/tb \
+    --cache_dir $run_dir \
+    --output_dir $run_dir 2>&1 | tee $run_dir/train.log
 
-rm -r $run_dir/checkpoint*
+  rm -r $run_dir/checkpoint*
+
+fi
+
