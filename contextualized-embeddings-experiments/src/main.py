@@ -1,5 +1,5 @@
 from unicodedata import bidirectional
-from datasets import NERCorpus
+from flair_datasets import NERCorpus
 from models import NERTagger
 from embeddings import Embeddings
 from trainers import NERTrainer
