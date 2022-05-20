@@ -72,7 +72,7 @@ if __name__=='__main__':
                             # Create Sequence Labeling Trainer
                             trainer = NERTrainer(corpus = corpus,
                                 tagger = tagger,
-                                epochs = 2,
+                                epochs = 100,
                                 learning_rate = 0.1,
                                 mini_batch_size = 16,
                                 output_path = output_path
