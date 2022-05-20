@@ -5,6 +5,7 @@ from typing import List
 import re 
 import numpy as np
 import torch
+import os
 
 class W2vWordEmbeddings(TokenEmbeddings):
 
@@ -49,18 +50,17 @@ class Embeddings:
         embedding_types: List[FlairEmbeddings] = []
         
         if self.contextual_embeddings_type == 'clinical-flair':
-            embedding_types.append(FlairEmbeddings('es-clinical-forward'))
-            embedding_types.append(FlairEmbeddings('es-clinical-backward'))
-
+            embedding_types.append(FlairEmbeddings(os.path.join(self.embeddings_path, 'es-clinical-forward.pt')))
+            embedding_types.append(FlairEmbeddings(os.path.join(self.embeddings_path, 'es-clinical-backward.pt')))
         
-        if self.contextual_embeddings_type == 'biomedical-roberta':
+        else:
             if self.layers=='all':
-                embedding_types.append(TransformerWordEmbeddings("PlanTL-GOB-ES/roberta-base-biomedical-clinical-es",
+                embedding_types.append(TransformerWordEmbeddings(self.embeddings_path,
                 layers = 'all', 
                 layer_mean = True, 
                 subtoken_pooling = 'first'))
             else:
-                embedding_types.append(TransformerWordEmbeddings("PlanTL-GOB-ES/roberta-base-biomedical-clinical-es",
+                embedding_types.append(TransformerWordEmbeddings(self.embeddings_path,
                 layers = '-1,-2,-3,-4', 
                 layer_mean = False, 
                 subtoken_pooling = 'first'))
