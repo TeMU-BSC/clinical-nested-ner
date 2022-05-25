@@ -1,0 +1,384 @@
+Dataset: wl, Transformer model: beto, Learning Rate: 1e-5.
+standard metric - precision: 73.6 (0.003), recall: 77.96 (0.002), f1-score: 75.72 (0.002)
+flat metric - precision: 72.84 (0.003), recall: 79.83 (0.002), f1-score: 76.17 (0.003)
+inner metric - precision: 80.23 (0.005), recall: 83.63 (0.006), f1-score: 81.89 (0.003)
+outer metric - precision: 66.76 (0.003), recall: 65.96 (0.006), f1-score: 66.35 (0.005)
+nested metric - precision: 74.51 (0.003), recall: 75.89 (0.006), f1-score: 75.19 (0.004)
+nesting metric - precision: 53.31 (0.003), recall: 55.28 (0.005), f1-score: 54.27 (0.004)
+
+Dataset: wl, Transformer model: beto, Learning Rate: 1e-6.
+standard metric - precision: 59.34 (0.005), recall: 61.95 (0.003), f1-score: 60.61 (0.001)
+flat metric - precision: 56.07 (0.003), recall: 66.8 (0.004), f1-score: 60.97 (0.002)
+inner metric - precision: 71.85 (0.008), recall: 66.24 (0.003), f1-score: 68.93 (0.002)
+outer metric - precision: 53.44 (0.021), recall: 44.12 (0.007), f1-score: 48.32 (0.011)
+nested metric - precision: 64.27 (0.013), recall: 56.55 (0.003), f1-score: 60.16 (0.005)
+nesting metric - precision: 34.49 (0.014), recall: 29.0 (0.002), f1-score: 31.5 (0.007)
+
+Dataset: wl, Transformer model: beto, Learning Rate: 5e-5.
+standard metric - precision: 75.93 (0.009), recall: 79.1 (0.005), f1-score: 77.48 (0.007)
+flat metric - precision: 76.05 (0.017), recall: 80.52 (0.006), f1-score: 78.22 (0.011)
+inner metric - precision: 81.37 (0.003), recall: 84.81 (0.003), f1-score: 83.05 (0.003)
+outer metric - precision: 68.32 (0.006), recall: 68.14 (0.007), f1-score: 68.23 (0.001)
+nested metric - precision: 75.79 (0.002), recall: 77.51 (0.004), f1-score: 76.64 (0.001)
+nesting metric - precision: 55.16 (0.004), recall: 57.59 (0.004), f1-score: 56.35 (0.002)
+
+Dataset: wl, Transformer model: beto, Learning Rate: 5e-6.
+standard metric - precision: 71.32 (0.003), recall: 75.66 (0.003), f1-score: 73.43 (0.001)
+flat metric - precision: 70.19 (0.004), recall: 77.9 (0.003), f1-score: 73.85 (0.001)
+inner metric - precision: 79.38 (0.01), recall: 81.29 (0.005), f1-score: 80.32 (0.003)
+outer metric - precision: 63.81 (0.007), recall: 62.75 (0.003), f1-score: 63.27 (0.004)
+nested metric - precision: 72.71 (0.008), recall: 73.17 (0.004), f1-score: 72.94 (0.002)
+nesting metric - precision: 50.69 (0.007), recall: 52.09 (0.007), f1-score: 51.37 (0.005)
+
+Dataset: clinical_trials, Transformer model: beto, Learning Rate: 1e-5.
+standard metric - precision: 82.88 (0.001), recall: 86.17 (0.001), f1-score: 84.49 (0.0)
+flat metric - precision: 82.72 (0.002), recall: 86.63 (0.0), f1-score: 84.63 (0.001)
+inner metric - precision: 85.47 (0.003), recall: 89.52 (0.002), f1-score: 87.45 (0.001)
+outer metric - precision: 80.82 (0.002), recall: 79.67 (0.004), f1-score: 80.24 (0.003)
+nested metric - precision: 83.35 (0.002), recall: 84.87 (0.002), f1-score: 84.1 (0.002)
+nesting metric - precision: 70.77 (0.002), recall: 71.99 (0.003), f1-score: 71.37 (0.002)
+
+Dataset: clinical_trials, Transformer model: beto, Learning Rate: 1e-6.
+standard metric - precision: 67.5 (0.011), recall: 76.29 (0.003), f1-score: 71.62 (0.007)
+flat metric - precision: 67.34 (0.012), recall: 78.49 (0.004), f1-score: 72.48 (0.009)
+inner metric - precision: 67.09 (0.005), recall: 70.4 (0.007), f1-score: 68.7 (0.002)
+outer metric - precision: 69.11 (0.012), recall: 69.66 (0.004), f1-score: 69.38 (0.008)
+nested metric - precision: 68.02 (0.008), recall: 70.05 (0.003), f1-score: 69.02 (0.003)
+nesting metric - precision: 47.83 (0.015), recall: 46.04 (0.011), f1-score: 46.91 (0.012)
+
+Dataset: clinical_trials, Transformer model: beto, Learning Rate: 5e-5.
+standard metric - precision: 84.96 (0.004), recall: 87.19 (0.002), f1-score: 86.06 (0.002)
+flat metric - precision: 84.85 (0.003), recall: 87.4 (0.001), f1-score: 86.11 (0.001)
+inner metric - precision: 87.62 (0.01), recall: 90.6 (0.004), f1-score: 89.09 (0.006)
+outer metric - precision: 82.53 (0.009), recall: 82.12 (0.002), f1-score: 82.32 (0.004)
+nested metric - precision: 85.27 (0.009), recall: 86.6 (0.003), f1-score: 85.93 (0.005)
+nesting metric - precision: 73.54 (0.009), recall: 74.62 (0.005), f1-score: 74.07 (0.004)
+
+Dataset: clinical_trials, Transformer model: beto, Learning Rate: 5e-6.
+standard metric - precision: 80.98 (0.005), recall: 84.71 (0.002), f1-score: 82.8 (0.004)
+flat metric - precision: 80.9 (0.007), recall: 85.49 (0.002), f1-score: 83.13 (0.004)
+inner metric - precision: 84.2 (0.002), recall: 86.57 (0.001), f1-score: 85.37 (0.001)
+outer metric - precision: 77.82 (0.001), recall: 78.01 (0.009), f1-score: 77.91 (0.004)
+nested metric - precision: 81.23 (0.001), recall: 82.53 (0.005), f1-score: 81.87 (0.002)
+nesting metric - precision: 66.92 (0.002), recall: 67.3 (0.01), f1-score: 67.11 (0.006)
+
+Dataset: wl, Transformer model: BETO_Galen_ckpt, Learning Rate: 1e-5.
+standard metric - precision: 73.11 (0.007), recall: 77.56 (0.005), f1-score: 75.27 (0.006)
+flat metric - precision: 71.65 (0.01), recall: 79.13 (0.004), f1-score: 75.2 (0.007)
+inner metric - precision: 79.9 (0.004), recall: 82.88 (0.005), f1-score: 81.36 (0.004)
+outer metric - precision: 68.1 (0.004), recall: 66.76 (0.007), f1-score: 67.42 (0.005)
+nested metric - precision: 74.89 (0.004), recall: 75.82 (0.006), f1-score: 75.35 (0.004)
+nesting metric - precision: 54.02 (0.007), recall: 55.51 (0.007), f1-score: 54.76 (0.007)
+
+Dataset: wl, Transformer model: BETO_Galen_ckpt, Learning Rate: 1e-6.
+standard metric - precision: 55.5 (0.0), recall: 55.45 (0.004), f1-score: 55.47 (0.002)
+flat metric - precision: 51.39 (0.002), recall: 62.08 (0.008), f1-score: 56.23 (0.005)
+inner metric - precision: 63.87 (0.006), recall: 50.54 (0.01), f1-score: 56.43 (0.009)
+outer metric - precision: 61.03 (0.016), recall: 44.89 (0.02), f1-score: 51.73 (0.019)
+nested metric - precision: 62.69 (0.003), recall: 48.06 (0.004), f1-score: 54.41 (0.004)
+nesting metric - precision: 33.13 (0.013), recall: 22.45 (0.011), f1-score: 26.77 (0.012)
+
+Dataset: wl, Transformer model: BETO_Galen_ckpt, Learning Rate: 5e-5.
+standard metric - precision: 74.52 (0.005), recall: 78.79 (0.004), f1-score: 76.59 (0.001)
+flat metric - precision: 72.59 (0.007), recall: 80.16 (0.005), f1-score: 76.18 (0.004)
+inner metric - precision: 81.44 (0.018), recall: 85.12 (0.004), f1-score: 83.22 (0.007)
+outer metric - precision: 70.52 (0.008), recall: 67.19 (0.004), f1-score: 68.81 (0.003)
+nested metric - precision: 76.9 (0.012), recall: 77.27 (0.004), f1-score: 77.07 (0.004)
+nesting metric - precision: 56.74 (0.014), recall: 57.55 (0.004), f1-score: 57.13 (0.007)
+
+Dataset: wl, Transformer model: BETO_Galen_ckpt, Learning Rate: 5e-6.
+standard metric - precision: 70.47 (0.002), recall: 75.55 (0.001), f1-score: 72.92 (0.002)
+flat metric - precision: 68.4 (0.002), recall: 77.57 (0.001), f1-score: 72.7 (0.001)
+inner metric - precision: 78.72 (0.007), recall: 80.84 (0.002), f1-score: 79.76 (0.005)
+outer metric - precision: 65.45 (0.004), recall: 63.63 (0.001), f1-score: 64.53 (0.002)
+nested metric - precision: 73.09 (0.006), recall: 73.3 (0.001), f1-score: 73.19 (0.004)
+nesting metric - precision: 51.33 (0.007), recall: 52.64 (0.001), f1-score: 51.97 (0.004)
+
+Dataset: clinical_trials, Transformer model: BETO_Galen_ckpt, Learning Rate: 1e-5.
+standard metric - precision: 77.83 (0.002), recall: 82.81 (0.003), f1-score: 80.24 (0.002)
+flat metric - precision: 77.0 (0.003), recall: 83.65 (0.002), f1-score: 80.19 (0.002)
+inner metric - precision: 85.06 (0.002), recall: 85.57 (0.005), f1-score: 85.31 (0.003)
+outer metric - precision: 75.08 (0.007), recall: 74.68 (0.004), f1-score: 74.88 (0.003)
+nested metric - precision: 80.37 (0.003), recall: 80.43 (0.004), f1-score: 80.4 (0.001)
+nesting metric - precision: 64.74 (0.004), recall: 65.46 (0.004), f1-score: 65.09 (0.001)
+
+Dataset: clinical_trials, Transformer model: BETO_Galen_ckpt, Learning Rate: 1e-6.
+standard metric - precision: 55.02 (0.01), recall: 62.08 (0.011), f1-score: 58.34 (0.01)
+flat metric - precision: 53.14 (0.014), recall: 66.07 (0.01), f1-score: 58.9 (0.012)
+inner metric - precision: 65.5 (0.013), recall: 48.77 (0.027), f1-score: 55.83 (0.013)
+outer metric - precision: 61.4 (0.023), recall: 52.99 (0.006), f1-score: 56.87 (0.012)
+nested metric - precision: 63.42 (0.018), recall: 50.76 (0.013), f1-score: 56.35 (0.001)
+nesting metric - precision: 37.33 (0.004), recall: 25.35 (0.02), f1-score: 30.14 (0.014)
+
+Dataset: clinical_trials, Transformer model: BETO_Galen_ckpt, Learning Rate: 5e-5.
+standard metric - precision: 82.47 (0.004), recall: 85.49 (0.001), f1-score: 83.95 (0.001)
+flat metric - precision: 81.87 (0.004), recall: 85.92 (0.002), f1-score: 83.85 (0.001)
+inner metric - precision: 87.64 (0.006), recall: 88.49 (0.003), f1-score: 88.06 (0.003)
+outer metric - precision: 80.37 (0.003), recall: 79.52 (0.004), f1-score: 79.95 (0.003)
+nested metric - precision: 84.24 (0.004), recall: 84.25 (0.003), f1-score: 84.25 (0.002)
+nesting metric - precision: 71.45 (0.003), recall: 71.69 (0.003), f1-score: 71.57 (0.002)
+
+Dataset: clinical_trials, Transformer model: BETO_Galen_ckpt, Learning Rate: 5e-6.
+standard metric - precision: 74.33 (0.002), recall: 80.16 (0.003), f1-score: 77.14 (0.002)
+flat metric - precision: 73.12 (0.002), recall: 81.5 (0.004), f1-score: 77.09 (0.002)
+inner metric - precision: 83.0 (0.008), recall: 81.15 (0.003), f1-score: 82.07 (0.005)
+outer metric - precision: 72.91 (0.005), recall: 70.99 (0.006), f1-score: 71.94 (0.004)
+nested metric - precision: 78.25 (0.006), recall: 76.35 (0.002), f1-score: 77.29 (0.003)
+nesting metric - precision: 60.63 (0.009), recall: 59.23 (0.002), f1-score: 59.92 (0.005)
+
+Dataset: wl, Transformer model: biomedical-clinical-swm-vocab-50k, Learning Rate: 1e-5.
+standard metric - precision: 76.12 (0.003), recall: 80.7 (0.001), f1-score: 78.34 (0.002)
+flat metric - precision: 75.39 (0.001), recall: 82.27 (0.002), f1-score: 78.68 (0.001)
+inner metric - precision: 81.82 (0.005), recall: 85.94 (0.001), f1-score: 83.83 (0.003)
+outer metric - precision: 70.44 (0.006), recall: 69.98 (0.003), f1-score: 70.21 (0.005)
+nested metric - precision: 76.99 (0.006), recall: 78.95 (0.001), f1-score: 77.96 (0.004)
+nesting metric - precision: 56.3 (0.007), recall: 59.66 (0.003), f1-score: 57.93 (0.005)
+
+Dataset: wl, Transformer model: biomedical-clinical-swm-vocab-50k, Learning Rate: 1e-6.
+standard metric - precision: 57.5 (0.008), recall: 53.19 (0.014), f1-score: 55.26 (0.011)
+flat metric - precision: 53.56 (0.01), recall: 63.92 (0.024), f1-score: 58.28 (0.015)
+inner metric - precision: 63.89 (0.019), recall: 39.5 (0.038), f1-score: 48.7 (0.03)
+outer metric - precision: 68.42 (0.017), recall: 43.49 (0.012), f1-score: 53.16 (0.01)
+nested metric - precision: 65.94 (0.014), recall: 41.25 (0.022), f1-score: 50.69 (0.014)
+nesting metric - precision: 24.1 (0.024), recall: 10.83 (0.021), f1-score: 14.91 (0.025)
+
+Dataset: wl, Transformer model: biomedical-clinical-swm-vocab-50k, Learning Rate: 5e-5.
+standard metric - precision: 77.31 (0.004), recall: 81.27 (0.005), f1-score: 79.24 (0.004)
+flat metric - precision: 76.93 (0.007), recall: 82.26 (0.004), f1-score: 79.5 (0.006)
+inner metric - precision: 82.37 (0.006), recall: 87.3 (0.001), f1-score: 84.76 (0.003)
+outer metric - precision: 71.45 (0.005), recall: 71.02 (0.014), f1-score: 71.22 (0.007)
+nested metric - precision: 77.76 (0.005), recall: 80.17 (0.006), f1-score: 78.94 (0.003)
+nesting metric - precision: 58.47 (0.007), recall: 61.39 (0.004), f1-score: 59.89 (0.004)
+
+Dataset: wl, Transformer model: biomedical-clinical-swm-vocab-50k, Learning Rate: 5e-6.
+standard metric - precision: 73.65 (0.006), recall: 78.19 (0.005), f1-score: 75.85 (0.005)
+flat metric - precision: 71.98 (0.009), recall: 80.97 (0.005), f1-score: 76.21 (0.007)
+inner metric - precision: 82.36 (0.003), recall: 82.4 (0.004), f1-score: 82.38 (0.001)
+outer metric - precision: 67.13 (0.006), recall: 65.74 (0.007), f1-score: 66.43 (0.007)
+nested metric - precision: 75.77 (0.001), recall: 75.1 (0.006), f1-score: 75.43 (0.003)
+nesting metric - precision: 53.19 (0.004), recall: 54.57 (0.007), f1-score: 53.87 (0.005)
+
+Dataset: clinical_trials, Transformer model: biomedical-clinical-swm-vocab-50k, Learning Rate: 1e-5.
+standard metric - precision: 85.04 (0.004), recall: 88.35 (0.003), f1-score: 86.66 (0.003)
+flat metric - precision: 85.06 (0.004), recall: 88.94 (0.002), f1-score: 86.96 (0.002)
+inner metric - precision: 87.06 (0.007), recall: 88.52 (0.012), f1-score: 87.78 (0.009)
+outer metric - precision: 82.66 (0.005), recall: 84.66 (0.006), f1-score: 83.65 (0.005)
+nested metric - precision: 84.97 (0.005), recall: 86.7 (0.008), f1-score: 85.83 (0.006)
+nesting metric - precision: 72.64 (0.008), recall: 74.62 (0.013), f1-score: 73.62 (0.01)
+
+Dataset: clinical_trials, Transformer model: biomedical-clinical-swm-vocab-50k, Learning Rate: 1e-6.
+standard metric - precision: 65.5 (0.015), recall: 67.32 (0.021), f1-score: 66.4 (0.017)
+flat metric - precision: 62.55 (0.023), recall: 76.52 (0.02), f1-score: 68.83 (0.022)
+inner metric - precision: 76.19 (0.11), recall: 14.43 (0.051), f1-score: 23.6 (0.065)
+outer metric - precision: 92.31 (0.068), recall: 71.2 (0.012), f1-score: 80.32 (0.033)
+nested metric - precision: 88.76 (0.081), recall: 41.25 (0.022), f1-score: 56.07 (0.004)
+nesting metric - precision: 13.76 (0.112), recall: 2.57 (0.034), f1-score: 4.16 (0.054)
+
+Dataset: clinical_trials, Transformer model: biomedical-clinical-swm-vocab-50k, Learning Rate: 5e-5.
+standard metric - precision: 88.03 (0.003), recall: 90.43 (0.001), f1-score: 89.21 (0.001)
+flat metric - precision: 87.81 (0.004), recall: 90.54 (0.002), f1-score: 89.16 (0.001)
+inner metric - precision: 90.95 (0.001), recall: 92.77 (0.002), f1-score: 91.85 (0.002)
+outer metric - precision: 86.05 (0.005), recall: 87.11 (0.001), f1-score: 86.58 (0.003)
+nested metric - precision: 88.64 (0.003), recall: 90.1 (0.002), f1-score: 89.36 (0.002)
+nesting metric - precision: 78.04 (0.007), recall: 79.85 (0.007), f1-score: 78.94 (0.007)
+
+Dataset: clinical_trials, Transformer model: biomedical-clinical-swm-vocab-50k, Learning Rate: 5e-6.
+standard metric - precision: 81.87 (0.006), recall: 86.11 (0.005), f1-score: 83.94 (0.005)
+flat metric - precision: 81.71 (0.003), recall: 87.41 (0.005), f1-score: 84.46 (0.004)
+inner metric - precision: 83.0 (0.033), recall: 84.13 (0.014), f1-score: 83.55 (0.023)
+outer metric - precision: 81.71 (0.001), recall: 80.52 (0.007), f1-score: 81.11 (0.004)
+nested metric - precision: 82.39 (0.018), recall: 82.43 (0.004), f1-score: 82.4 (0.011)
+nesting metric - precision: 67.39 (0.018), recall: 65.7 (0.011), f1-score: 66.53 (0.014)
+
+Dataset: wl, Transformer model: biomedical-swm-vocab-50k, Learning Rate: 1e-5.
+standard metric - precision: 74.84 (0.005), recall: 78.79 (0.005), f1-score: 76.76 (0.005)
+flat metric - precision: 74.16 (0.004), recall: 80.93 (0.002), f1-score: 77.4 (0.002)
+inner metric - precision: 81.66 (0.004), recall: 83.97 (0.008), f1-score: 82.8 (0.006)
+outer metric - precision: 67.65 (0.013), recall: 66.7 (0.008), f1-score: 67.17 (0.01)
+nested metric - precision: 75.67 (0.008), recall: 76.41 (0.008), f1-score: 76.03 (0.008)
+nesting metric - precision: 54.15 (0.014), recall: 56.1 (0.011), f1-score: 55.1 (0.012)
+
+Dataset: wl, Transformer model: biomedical-swm-vocab-50k, Learning Rate: 1e-6.
+standard metric - precision: 55.24 (0.003), recall: 48.34 (0.002), f1-score: 51.56 (0.003)
+flat metric - precision: 51.13 (0.006), recall: 59.86 (0.005), f1-score: 55.15 (0.006)
+inner metric - precision: 64.67 (0.038), recall: 31.21 (0.02), f1-score: 42.1 (0.026)
+outer metric - precision: 65.4 (0.005), recall: 41.07 (0.012), f1-score: 50.44 (0.01)
+nested metric - precision: 65.07 (0.018), recall: 35.53 (0.006), f1-score: 45.96 (0.009)
+nesting metric - precision: 11.9 (0.007), recall: 4.15 (0.005), f1-score: 6.15 (0.006)
+
+Dataset: wl, Transformer model: biomedical-swm-vocab-50k, Learning Rate: 5e-5.
+standard metric - precision: 76.55 (0.002), recall: 80.32 (0.003), f1-score: 78.39 (0.002)
+flat metric - precision: 75.29 (0.0), recall: 81.79 (0.005), f1-score: 78.4 (0.002)
+inner metric - precision: 83.14 (0.003), recall: 87.04 (0.002), f1-score: 85.05 (0.001)
+outer metric - precision: 70.95 (0.01), recall: 67.98 (0.012), f1-score: 69.42 (0.007)
+nested metric - precision: 78.06 (0.006), recall: 78.69 (0.006), f1-score: 78.37 (0.004)
+nesting metric - precision: 58.28 (0.005), recall: 59.33 (0.008), f1-score: 58.8 (0.003)
+
+Dataset: wl, Transformer model: biomedical-swm-vocab-50k, Learning Rate: 5e-6.
+standard metric - precision: 72.31 (0.003), recall: 76.33 (0.001), f1-score: 74.27 (0.002)
+flat metric - precision: 70.26 (0.003), recall: 79.63 (0.001), f1-score: 74.66 (0.001)
+inner metric - precision: 81.75 (0.003), recall: 80.81 (0.004), f1-score: 81.28 (0.003)
+outer metric - precision: 65.86 (0.003), recall: 62.21 (0.002), f1-score: 63.98 (0.002)
+nested metric - precision: 74.97 (0.003), recall: 72.66 (0.003), f1-score: 73.8 (0.003)
+nesting metric - precision: 51.81 (0.007), recall: 51.47 (0.005), f1-score: 51.64 (0.005)
+
+Dataset: clinical_trials, Transformer model: biomedical-swm-vocab-50k, Learning Rate: 1e-5.
+standard metric - precision: 85.0 (0.003), recall: 88.52 (0.001), f1-score: 86.73 (0.002)
+flat metric - precision: 84.72 (0.003), recall: 89.16 (0.002), f1-score: 86.89 (0.003)
+inner metric - precision: 87.37 (0.002), recall: 88.57 (0.007), f1-score: 87.96 (0.003)
+outer metric - precision: 84.11 (0.014), recall: 84.6 (0.008), f1-score: 84.35 (0.01)
+nested metric - precision: 85.83 (0.007), recall: 86.7 (0.004), f1-score: 86.26 (0.003)
+nesting metric - precision: 73.85 (0.008), recall: 74.35 (0.009), f1-score: 74.09 (0.004)
+
+Dataset: clinical_trials, Transformer model: biomedical-swm-vocab-50k, Learning Rate: 1e-6.
+standard metric - precision: 17.34 (0.245), recall: 19.5 (0.276), f1-score: 18.35 (0.26)
+flat metric - precision: 16.13 (0.228), recall: 22.77 (0.322), f1-score: 18.89 (0.267)
+inner metric - precision: 32.09 (0.454), recall: 3.49 (0.049), f1-score: 6.3 (0.089)
+outer metric - precision: 32.94 (0.466), recall: 17.73 (0.251), f1-score: 23.05 (0.326)
+nested metric - precision: 32.78 (0.464), recall: 10.22 (0.144), f1-score: 15.58 (0.22)
+nesting metric - precision: 3.03 (0.043), recall: 0.03 (0.0), f1-score: 0.06 (0.001)
+
+Dataset: clinical_trials, Transformer model: biomedical-swm-vocab-50k, Learning Rate: 5e-5.
+standard metric - precision: 87.92 (0.001), recall: 90.2 (0.002), f1-score: 89.04 (0.001)
+flat metric - precision: 87.95 (0.002), recall: 90.26 (0.003), f1-score: 89.09 (0.002)
+inner metric - precision: 90.1 (0.008), recall: 93.04 (0.002), f1-score: 91.54 (0.004)
+outer metric - precision: 85.24 (0.004), recall: 86.66 (0.001), f1-score: 85.95 (0.002)
+nested metric - precision: 87.82 (0.006), recall: 90.03 (0.001), f1-score: 88.91 (0.003)
+nesting metric - precision: 77.26 (0.01), recall: 80.04 (0.003), f1-score: 78.62 (0.006)
+
+Dataset: clinical_trials, Transformer model: biomedical-swm-vocab-50k, Learning Rate: 5e-6.
+standard metric - precision: 80.39 (0.006), recall: 85.98 (0.003), f1-score: 83.09 (0.004)
+flat metric - precision: 80.99 (0.004), recall: 87.58 (0.001), f1-score: 84.16 (0.002)
+inner metric - precision: 76.74 (0.02), recall: 81.91 (0.011), f1-score: 79.24 (0.016)
+outer metric - precision: 80.84 (0.012), recall: 80.88 (0.005), f1-score: 80.86 (0.008)
+nested metric - precision: 78.61 (0.016), recall: 81.43 (0.008), f1-score: 79.99 (0.012)
+nesting metric - precision: 63.08 (0.021), recall: 63.1 (0.016), f1-score: 63.09 (0.019)
+
+Dataset: wl, Transformer model: mbert-cased, Learning Rate: 1e-5.
+standard metric - precision: 72.98 (0.0), recall: 77.65 (0.001), f1-score: 75.24 (0.001)
+flat metric - precision: 72.02 (0.0), recall: 79.05 (0.002), f1-score: 75.37 (0.001)
+inner metric - precision: 79.79 (0.003), recall: 84.34 (0.003), f1-score: 82.0 (0.0)
+outer metric - precision: 66.36 (0.002), recall: 65.5 (0.003), f1-score: 65.93 (0.002)
+nested metric - precision: 74.13 (0.0), recall: 76.09 (0.001), f1-score: 75.1 (0.0)
+nesting metric - precision: 53.0 (0.003), recall: 55.24 (0.004), f1-score: 54.1 (0.003)
+
+Dataset: wl, Transformer model: mbert-cased, Learning Rate: 1e-6.
+standard metric - precision: 56.49 (0.004), recall: 57.79 (0.001), f1-score: 57.13 (0.002)
+flat metric - precision: 51.8 (0.004), recall: 63.5 (0.003), f1-score: 57.06 (0.002)
+inner metric - precision: 70.6 (0.007), recall: 61.25 (0.004), f1-score: 65.59 (0.005)
+outer metric - precision: 54.93 (0.006), recall: 38.86 (0.003), f1-score: 45.52 (0.003)
+nested metric - precision: 64.51 (0.006), recall: 51.44 (0.004), f1-score: 57.24 (0.004)
+nesting metric - precision: 31.7 (0.007), recall: 21.98 (0.007), f1-score: 25.96 (0.007)
+
+Dataset: wl, Transformer model: mbert-cased, Learning Rate: 5e-5.
+standard metric - precision: 74.33 (0.008), recall: 78.08 (0.01), f1-score: 76.16 (0.009)
+flat metric - precision: 74.17 (0.008), recall: 79.28 (0.01), f1-score: 76.64 (0.009)
+inner metric - precision: 80.56 (0.008), recall: 85.38 (0.002), f1-score: 82.9 (0.004)
+outer metric - precision: 66.23 (0.014), recall: 65.68 (0.024), f1-score: 65.95 (0.019)
+nested metric - precision: 74.52 (0.009), recall: 76.75 (0.01), f1-score: 75.62 (0.01)
+nesting metric - precision: 53.66 (0.013), recall: 56.0 (0.019), f1-score: 54.81 (0.016)
+
+Dataset: wl, Transformer model: mbert-cased, Learning Rate: 5e-6.
+standard metric - precision: 70.28 (0.002), recall: 74.64 (0.003), f1-score: 72.39 (0.003)
+flat metric - precision: 68.62 (0.003), recall: 76.91 (0.001), f1-score: 72.53 (0.001)
+inner metric - precision: 80.1 (0.005), recall: 81.29 (0.005), f1-score: 80.69 (0.005)
+outer metric - precision: 61.99 (0.009), recall: 60.33 (0.008), f1-score: 61.15 (0.009)
+nested metric - precision: 72.35 (0.007), recall: 72.11 (0.006), f1-score: 72.23 (0.006)
+nesting metric - precision: 49.16 (0.008), recall: 50.27 (0.01), f1-score: 49.71 (0.009)
+
+Dataset: clinical_trials, Transformer model: mbert-cased, Learning Rate: 1e-5.
+standard metric - precision: 81.12 (0.005), recall: 84.19 (0.003), f1-score: 82.63 (0.004)
+flat metric - precision: 81.07 (0.007), recall: 84.95 (0.004), f1-score: 82.96 (0.004)
+inner metric - precision: 83.8 (0.004), recall: 85.89 (0.007), f1-score: 84.83 (0.006)
+outer metric - precision: 78.38 (0.006), recall: 77.74 (0.004), f1-score: 78.06 (0.005)
+nested metric - precision: 81.29 (0.001), recall: 82.04 (0.003), f1-score: 81.66 (0.002)
+nesting metric - precision: 67.24 (0.004), recall: 67.6 (0.002), f1-score: 67.42 (0.003)
+
+Dataset: clinical_trials, Transformer model: mbert-cased, Learning Rate: 1e-6.
+standard metric - precision: 62.63 (0.004), recall: 71.42 (0.003), f1-score: 66.73 (0.004)
+flat metric - precision: 62.17 (0.008), recall: 74.26 (0.003), f1-score: 67.68 (0.006)
+inner metric - precision: 65.21 (0.011), recall: 65.85 (0.007), f1-score: 65.52 (0.003)
+outer metric - precision: 63.07 (0.01), recall: 60.59 (0.007), f1-score: 61.79 (0.003)
+nested metric - precision: 64.23 (0.01), recall: 63.37 (0.007), f1-score: 63.78 (0.001)
+nesting metric - precision: 42.89 (0.003), recall: 39.38 (0.012), f1-score: 41.05 (0.005)
+
+Dataset: clinical_trials, Transformer model: mbert-cased, Learning Rate: 5e-5.
+standard metric - precision: 83.34 (0.006), recall: 85.97 (0.006), f1-score: 84.64 (0.005)
+flat metric - precision: 83.01 (0.003), recall: 86.22 (0.005), f1-score: 84.59 (0.004)
+inner metric - precision: 86.74 (0.013), recall: 88.98 (0.006), f1-score: 87.84 (0.009)
+outer metric - precision: 81.52 (0.022), recall: 81.13 (0.013), f1-score: 81.32 (0.017)
+nested metric - precision: 84.31 (0.017), recall: 85.27 (0.008), f1-score: 84.79 (0.012)
+nesting metric - precision: 71.82 (0.023), recall: 72.53 (0.012), f1-score: 72.17 (0.017)
+
+Dataset: clinical_trials, Transformer model: mbert-cased, Learning Rate: 5e-6.
+standard metric - precision: 78.33 (0.003), recall: 82.5 (0.001), f1-score: 80.36 (0.002)
+flat metric - precision: 77.69 (0.003), recall: 83.62 (0.001), f1-score: 80.55 (0.002)
+inner metric - precision: 83.35 (0.005), recall: 82.97 (0.001), f1-score: 83.16 (0.003)
+outer metric - precision: 76.82 (0.003), recall: 75.26 (0.006), f1-score: 76.03 (0.002)
+nested metric - precision: 80.29 (0.004), recall: 79.33 (0.002), f1-score: 79.8 (0.001)
+nesting metric - precision: 64.76 (0.005), recall: 63.25 (0.003), f1-score: 63.99 (0.002)
+
+Dataset: wl, Transformer model: mBERT_Galen_ckpt, Learning Rate: 1e-5.
+standard metric - precision: 73.6 (0.006), recall: 77.81 (0.002), f1-score: 75.65 (0.003)
+flat metric - precision: 72.01 (0.006), recall: 79.44 (0.003), f1-score: 75.54 (0.003)
+inner metric - precision: 80.95 (0.005), recall: 83.53 (0.005), f1-score: 82.22 (0.001)
+outer metric - precision: 68.16 (0.011), recall: 66.32 (0.008), f1-score: 67.23 (0.009)
+nested metric - precision: 75.53 (0.007), recall: 75.99 (0.002), f1-score: 75.76 (0.004)
+nesting metric - precision: 54.18 (0.01), recall: 55.48 (0.005), f1-score: 54.82 (0.008)
+
+Dataset: wl, Transformer model: mBERT_Galen_ckpt, Learning Rate: 1e-6.
+standard metric - precision: 54.88 (0.006), recall: 54.4 (0.006), f1-score: 54.64 (0.006)
+flat metric - precision: 50.18 (0.008), recall: 61.27 (0.009), f1-score: 55.18 (0.008)
+inner metric - precision: 65.87 (0.01), recall: 50.82 (0.012), f1-score: 57.37 (0.012)
+outer metric - precision: 60.31 (0.018), recall: 41.5 (0.012), f1-score: 49.16 (0.014)
+nested metric - precision: 63.59 (0.002), recall: 46.74 (0.005), f1-score: 53.88 (0.003)
+nesting metric - precision: 31.69 (0.013), recall: 19.63 (0.006), f1-score: 24.24 (0.008)
+
+Dataset: wl, Transformer model: mBERT_Galen_ckpt, Learning Rate: 5e-5.
+standard metric - precision: 75.16 (0.006), recall: 79.24 (0.003), f1-score: 77.15 (0.004)
+flat metric - precision: 73.76 (0.019), recall: 80.69 (0.003), f1-score: 77.06 (0.01)
+inner metric - precision: 82.02 (0.013), recall: 84.92 (0.006), f1-score: 83.44 (0.006)
+outer metric - precision: 70.04 (0.014), recall: 68.27 (0.016), f1-score: 69.11 (0.003)
+nested metric - precision: 76.95 (0.014), recall: 77.63 (0.009), f1-score: 77.27 (0.002)
+nesting metric - precision: 56.64 (0.01), recall: 57.91 (0.009), f1-score: 57.25 (0.002)
+
+Dataset: wl, Transformer model: mBERT_Galen_ckpt, Learning Rate: 5e-6.
+standard metric - precision: 69.84 (0.004), recall: 75.5 (0.001), f1-score: 72.56 (0.003)
+flat metric - precision: 68.0 (0.003), recall: 77.93 (0.001), f1-score: 72.63 (0.002)
+inner metric - precision: 78.33 (0.004), recall: 81.55 (0.006), f1-score: 79.9 (0.004)
+outer metric - precision: 63.66 (0.008), recall: 61.59 (0.002), f1-score: 62.61 (0.005)
+nested metric - precision: 72.16 (0.006), recall: 72.8 (0.004), f1-score: 72.48 (0.004)
+nesting metric - precision: 49.82 (0.009), recall: 51.49 (0.005), f1-score: 50.64 (0.007)
+
+Dataset: clinical_trials, Transformer model: mBERT_Galen_ckpt, Learning Rate: 1e-5.
+standard metric - precision: 77.62 (0.002), recall: 81.88 (0.003), f1-score: 79.69 (0.002)
+flat metric - precision: 76.81 (0.002), recall: 82.92 (0.002), f1-score: 79.74 (0.001)
+inner metric - precision: 84.05 (0.002), recall: 83.59 (0.004), f1-score: 83.82 (0.003)
+outer metric - precision: 75.7 (0.003), recall: 73.77 (0.006), f1-score: 74.72 (0.005)
+nested metric - precision: 80.14 (0.003), recall: 78.95 (0.005), f1-score: 79.54 (0.004)
+nesting metric - precision: 64.94 (0.005), recall: 63.88 (0.005), f1-score: 64.41 (0.005)
+
+Dataset: clinical_trials, Transformer model: mBERT_Galen_ckpt, Learning Rate: 1e-6.
+standard metric - precision: 53.04 (0.004), recall: 59.46 (0.005), f1-score: 56.07 (0.004)
+flat metric - precision: 50.55 (0.002), recall: 64.68 (0.002), f1-score: 56.75 (0.002)
+inner metric - precision: 72.38 (0.014), recall: 42.73 (0.031), f1-score: 53.67 (0.025)
+outer metric - precision: 61.34 (0.027), recall: 46.85 (0.016), f1-score: 53.12 (0.02)
+nested metric - precision: 66.47 (0.019), recall: 44.68 (0.016), f1-score: 53.41 (0.013)
+nesting metric - precision: 36.17 (0.026), recall: 19.69 (0.027), f1-score: 25.45 (0.028)
+
+Dataset: clinical_trials, Transformer model: mBERT_Galen_ckpt, Learning Rate: 5e-5.
+standard metric - precision: 82.53 (0.005), recall: 84.83 (0.004), f1-score: 83.67 (0.004)
+flat metric - precision: 82.2 (0.006), recall: 85.21 (0.003), f1-score: 83.67 (0.004)
+inner metric - precision: 86.8 (0.003), recall: 87.46 (0.009), f1-score: 87.13 (0.005)
+outer metric - precision: 79.81 (0.005), recall: 79.64 (0.006), f1-score: 79.73 (0.006)
+nested metric - precision: 83.52 (0.004), recall: 83.77 (0.006), f1-score: 83.64 (0.005)
+nesting metric - precision: 70.23 (0.008), recall: 70.87 (0.013), f1-score: 70.55 (0.011)
+
+Dataset: clinical_trials, Transformer model: mBERT_Galen_ckpt, Learning Rate: 5e-6.
+standard metric - precision: 73.37 (0.003), recall: 78.65 (0.001), f1-score: 75.92 (0.001)
+flat metric - precision: 72.0 (0.003), recall: 80.33 (0.001), f1-score: 75.94 (0.002)
+inner metric - precision: 82.43 (0.003), recall: 78.91 (0.003), f1-score: 80.63 (0.001)
+outer metric - precision: 72.89 (0.0), recall: 68.3 (0.002), f1-score: 70.52 (0.001)
+nested metric - precision: 77.97 (0.001), recall: 73.9 (0.002), f1-score: 75.88 (0.0)
+nesting metric - precision: 60.51 (0.001), recall: 56.41 (0.003), f1-score: 58.39 (0.002)
+

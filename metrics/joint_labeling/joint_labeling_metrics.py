@@ -5,9 +5,11 @@ from nestednereval.metrics import outer_metric
 from nestednereval.metrics import flat_metric
 from nestednereval.metrics import nested_metric
 from nestednereval.metrics import nesting_metric
+from collections import defaultdict
+from tqdm import tqdm
+import numpy as np
 import os
 import sys
-from tqdm import tqdm
 
 if __name__ == '__main__':
     preds_dir = sys.argv[1]
@@ -21,9 +23,12 @@ if __name__ == '__main__':
 
     for model in tqdm(os.listdir(f'{preds_dir}'), desc="Generating nested metrics....................."):
         for dataset in datasets:
+            
+            metrics = {lr: defaultdict(list) for lr in lrs}
+           
 
             for seed in seeds:
-
+                
                 for lr in lrs:
                     
                     path = f'{preds_dir}/{model}/{dataset}/seed-{seed}/lr-{lr}/preds_with_labels.conll'
@@ -65,24 +70,43 @@ if __name__ == '__main__':
                             data.append(
                                 {"real": real_entities, "pred": pred_entities})
 
-                        output_file.write(
-                            f'Dataset: {dataset}, Model: {model}, Seed: {seed}, Learning_rate: {lr} \n')
                         p, r, f, support = standard_metric(data)
-                        output_file.write(
-                            f'Standard metric - Precision: {p}, Recall: {r}, F1 score: {f}, Support: {support}\n')
+                        metrics[lr]["standard"].append({"precision": p, "recall": r, "f1": f})
+
                         p, r, f, support = flat_metric(data)
-                        output_file.write(
-                            f'Flat metric - Precision: {p}, Recall: {r}, F1 score: {f}, Support: {support}\n')
+                        metrics[lr]["flat"].append({"precision": p, "recall": r, "f1": f})
+
                         p, r, f, support = inner_metric(data)
-                        output_file.write(
-                            f'Inner metric - Precision: {p}, Recall: {r}, F1 score: {f}, Support: {support}\n')
+                        metrics[lr]["inner"].append({"precision": p, "recall": r, "f1": f})
+
                         p, r, f, support = outer_metric(data)
-                        output_file.write(
-                            f'Outer metric - Precision: {p}, Recall: {r}, F1 score: {f}, Support: {support}\n')
+                        metrics[lr]["outer"].append({"precision": p, "recall": r, "f1": f})
+
                         p, r, f, support = nested_metric(data)
-                        output_file.write(
-                            f'Nested metric - Precision: {p}, Recall: {r}, F1 score: {f}, Support: {support}\n')
+                        metrics[lr]["nested"].append({"precision": p, "recall": r, "f1": f})
+
                         p, r, f, support = nesting_metric(data)
-                        output_file.write(
-                            f'Nesting metric - Precision: {p}, Recall: {r}, F1 score: {f}, Support: {support}\n')
-                        output_file.write('\n')
+                        metrics[lr]["nesting"].append({"precision": p, "recall": r, "f1": f})
+
+       
+
+            for k1, v1 in metrics.items():
+             
+                print(f"Dataset: {dataset}, Transformer model: {model}, Learning Rate: {k1}.\n")
+                output_file.write(f"Dataset: {dataset}, Transformer model: {model}, Learning Rate: {k1}.\n")
+                for k2, v2 in v1.items():
+                    
+                    d = {"precision": [], "recall": [], "f1": []}
+
+                    for seed_metrics in v2:
+                        for k3, v3 in seed_metrics.items():
+                            d[k3].append(v3)
+
+                    
+                    output_file.write(
+                                    f'{k2} metric - precision: {round(np.mean(d["precision"])*100, 2)} ({round(np.std(d["precision"]), 3)}), recall: {round(np.mean(d["recall"])*100, 2)} ({round(np.std(d["recall"]), 3)}), f1-score: {round(np.mean(d["f1"])*100, 2)} ({round(np.std(d["f1"]), 3)})\n')
+                output_file.write('\n')
+
+            
+           
+                       
